@@ -11,7 +11,6 @@ import classes from "./Input.module.css";
  * @returns A div element with a class of 'input' and an input field
  */
 
-
 type InputProps = {
   type: string;
   placeholder: string;
@@ -21,7 +20,7 @@ export const Input: React.FC<InputProps> = ({
   type,
   placeholder,
   onChange,
-}) => {
+}): JSX.Element => {
   return (
     <div className={classes.input}>
       <input placeholder={placeholder} onChange={onChange} type={type} />
