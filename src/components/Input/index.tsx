@@ -1,4 +1,4 @@
-import classes from "./Input.module.css";
+import classes from "./styles.module.scss";
 
 /**
  * This is a reusable Input component in TypeScriptReact.

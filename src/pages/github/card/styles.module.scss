@@ -1,0 +1,84 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+  }
+  
+  .user_card__item {
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(238, 238, 238, 0.6);
+  
+    &:hover {
+      background-color: rgba(221, 221, 221, 0.7);
+    }
+  }
+  
+  .user_avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+  .user_name {
+    color: #000000;
+    word-wrap: break-word;
+  }
+  
+  .repo_card__item {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 15px;
+    color: #555;
+    text-decoration: none;
+    font-size: 13px;
+    width: 300px;
+    justify-content: space-between;
+    display: flex;
+    min-height: 150px;
+    word-break: break-all;
+    border-radius: 5px;
+    background-color: rgba(238, 238, 238, 0.6);
+  
+    &:hover {
+      background-color: rgba(221, 221, 221, 0.7);
+    }
+    & h3 {
+      margin-top: 0;
+      color: #4078c0;
+      font-size: 15px;
+    }
+  }
+  .repo_statistics_container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .repo_statistics {
+    display: flex;
+    justify-content: space-around;
+    & span {
+      display: flex;
+      justify-content: center;
+      & p {
+        padding: 0 5px;
+      }
+    }
+  }
+  

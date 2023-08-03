@@ -5,10 +5,10 @@ import classes from "./styles.module.scss";
 /**
  *
  * @param {number} count - The number of times the Skeleton component should be rendered.
- * @returns {JSX.Element} The loading skeleton component.
+ * @returns The loading skeleton component.
  */
 
-export const Loader: React.FC<{ count: number }> = ({ count }): JSX.Element => {
+export const Loader: React.FC<{ count: number }> = ({ count })=> {
   return (
     <div style={{ display: "flex" }}>
       <Skeleton

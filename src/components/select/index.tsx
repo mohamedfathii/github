@@ -1,5 +1,5 @@
 import { FC } from "react";
-import classes from "./select.module.scss";
+import classes from "./styles.module.scss";
 import * as SelectPrimitive from "@radix-ui/react-select";
 
 export type Option = {
