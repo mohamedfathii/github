@@ -17,7 +17,6 @@ const App = () => {
   return (
     <main className="App">
       <Provider store={store}>
-        <PersistGate persistor={persistStore(store)}>
           <Router>
             <Routes>
               {routes.map((route) => (
@@ -30,7 +29,6 @@ const App = () => {
               <Route path="*" element={<Navigate to="/home" replace />} />
             </Routes>
           </Router>
-        </PersistGate>
       </Provider>
     </main>
   );
